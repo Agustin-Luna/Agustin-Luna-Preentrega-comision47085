@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    list-style-type: none;
+}
+
+.navbar-container{
+    position: absoluteS;
+    z-index: 3;
+    top: 0;
+} 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.navbar-logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+    color: white;
+}
+.ver-carrito{
+    margin-right: 20px;
+} 
+
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.card:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.nombre{
+    margin-left: 10px;
+}
+
+.costo{
+    display: flex;
+    margin-left: 13px;
+    font-size: 20px;
+
+}
+
+.comprar{
+    border-radius: 7px;
+    font-size: 16px;
+    margin: 8px;
+}
+.comprar{
+    border: none;
+    background: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+} 
+
+/* CARRITO */
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: whitesmoke;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #272829;
+    color: white;
+    width: 100%;
+    padding-top: 15px;
+}
+.modal-header-title{
+    justify-self: start;
+}
+.modal-header-button{
+    cursor: pointer;
+}
+.modal-container  modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container div img{
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.borrar-producto{
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+    width: 150px;
+    font-size: 16px;
+    margin: 8px;
+    border: none;
+    background: none;
+    background-color: rgb(253, 253, 253);
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.sumar{
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+    width: 50px;
+    font-size: 16px;
+    margin: 8px;
+    border: none;
+    background: none;
+    background-color: rgb(253, 253, 253);
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.restar{
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+    width: 50px;
+    font-size: 16px;
+    margin: 8px;
+    border: none;
+    background: none;
+    background-color: rgb(253, 253, 253);
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
