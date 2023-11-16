@@ -40,6 +40,26 @@
     "precio": 15000,
     "img": "https://marcasjerez.com/wp-content/uploads/2021/07/ee215174.jpg",
     "cantidad": 1
+    },
+    {
+    "id": 7,
+    "nombre": "Camiseta liverpool 1994",
+    "precio": 13500,
+    "img": "https://www.camisetabaratas.com/images/Camiseta-Liverpool-Retro-Primera-Equipacion-1993-1995_01.jpg",
+    "cantidad": 1
+    },
+    {
+    "id": 8,
+    "nombre": "Camiseta Real Madrid 1996",
+    "precio": 15000,
+    "img": "https://aguerocamisetas.cl/wp-content/uploads/2021/03/f9eed0ac-scaled.jpg",
+    "cantidad": 1
+    },
+    {
+    "id": 9 ,
+    "nombre": "Camiseta M. United 1998",
+    "precio": 12000,
+    "img": "https://i.etsystatic.com/25819363/r/il/df169f/2620744396/il_1588xN.2620744396_9c1q.jpg",
+    "cantidad": 1
     }
 ]
-

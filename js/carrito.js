@@ -51,7 +51,7 @@ carrito.forEach((casaca) => {
 
 let eliminar = carritoContent.querySelector(".borrar-producto");
 eliminar.addEventListener("click", () => {
-    eliminarRemera(casaca.id);
+    eliminarProducto(casaca.id);
 });
 });
 const total = carrito.reduce ((acc, el) => acc + el.precio * el.cantidad, 0);
@@ -62,10 +62,10 @@ modalContainer.append(totalPagar);
 };
 verCarrito.addEventListener("click", pintarCarrito);
 
-const eliminarRemera = (id) => {
-    const fuoundId = carrito.find((element) => element.id === id);
+const eliminarProducto = (id) => {
+    const foundId = carrito.find((element) => element.id === id);
     carrito = carrito.filter((carritoId) => {
-        return carritoId !== fuoundId;
+        return carritoId !== foundId;
     });
 saveLocal();
 pintarCarrito();

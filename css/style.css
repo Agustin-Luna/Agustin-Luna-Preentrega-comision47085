@@ -95,8 +95,7 @@
     justify-self: start;
 }
 .modal-header-button{
-    cursor: pointer;
-}
+    cursor: pointer;}
 .modal-container  modal-content {
     display: flex;
     flex-direction: row;

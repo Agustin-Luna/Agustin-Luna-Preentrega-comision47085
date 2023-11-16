@@ -1,3 +1,6 @@
+const saveLocal = () => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    };
 const contenido = document.getElementById("shopContent");
 const verCarrito = document.getElementById ("verCarrito")
 const modalContainer = document.getElementById("modal-container");
@@ -7,11 +10,13 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const getProduct = async () => {
     const respuesta = await fetch("data.json");
     const data = await respuesta.json();
-    console.log(data)
+
 
     data.forEach((casaca) => {
         let content = document.createElement("div");
         content.className = "card";
+        content.setAttribute("data-aos", "flip-left");
+        content.setAttribute("data-aos-up", "fade");
         content.innerHTML = `
         <img src="${casaca.img}">
         <h3 class="nombre">${casaca.nombre}</h3>
